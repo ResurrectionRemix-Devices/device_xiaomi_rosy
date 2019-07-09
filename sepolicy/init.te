@@ -1,2 +1,3 @@
-allow init fingerprintd_device:chr_file setattr;
-
+#============= init ==============
+allow init sysfs:file setattr;
+allow init proc_boot_reason:file r_file_perms;
